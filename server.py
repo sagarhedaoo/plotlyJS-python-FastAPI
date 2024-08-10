@@ -47,3 +47,5 @@ async def sample_data2():
         return JSONResponse(content=data)
     except requests.RequestException as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
+
+#uvicorn main:app --reload
